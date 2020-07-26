@@ -1,5 +1,3 @@
-# README
-
 # DB設計
 
 ## usersテーブル

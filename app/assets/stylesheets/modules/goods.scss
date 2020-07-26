@@ -1,17 +1,27 @@
 header{
   width: 100vw;
   height: 150px;
-  background-color: red;
+
+  .top-logo{
+    font-size: 40px;
+    width: 230px;
+    height: 100px;
+    padding: 20px;
+    background-image: url("8736.jpg");
+    background-size: 100px;
+    margin: 10px;
+  }
 }
 
 .contents{
   width: 100vw;
-  height: calc(100vh - 250px);
-  background-color: yellow;
+  height: 900px;
+  background-image: url("84400.jpg");
+  background-size: contain;
 }
 
 footer{
   width: 100vw;
   height: 100px;
-  background-color: green;
+  background-color: gray;
 }
