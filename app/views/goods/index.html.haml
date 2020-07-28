@@ -1,9 +1,37 @@
 %header
-  .top-logo
-    FurimaKK
+  .header-top
+    .top-logo
+      FurimaKK
+    #first-note
+      ＜はじめての方へ＞
+      %ul
+        %li このサイトについて
+        %li 新規会員登録
+
+  .header-bottom
+    %ul#search-list
+      %li  商品の検索
+      %li  お部屋の検索
+      %li ログイン
+
 .contents
-  .introductuon
-    コンテンツの紹介
-  .pickup
-    今注目のお部屋はこちら
+  .content
+    .introduction
+      Contents
+      %ul.contents-list
+        %li 自分の部屋へ行く
+        %li 商品を出品する
+        %li 新商品を見る
+
+    .pickup
+      %h3 今注目のカテゴリー
+      %ul.category-list
+        %li アクセサリー
+        = image_tag "neckless.jpg", size: "130"
+        = image_tag "bankle.jpg", size: "130"
+        = image_tag "pias.jpg", size: "130"
+        %li 子供用・おもちゃ
+        = image_tag "toy1.jpg", size: "130"
+        = image_tag "toy2.jpg", size: "130"
+        = image_tag "toy3.jpg", size: "130"
 %footer
