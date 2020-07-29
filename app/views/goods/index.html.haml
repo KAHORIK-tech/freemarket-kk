@@ -17,21 +17,20 @@
 .contents
   .content
     .introduction
-      Contents
+      %h3 Contents
       %ul.contents-list
         %li 自分の部屋へ行く
         %li 商品を出品する
         %li 新商品を見る
 
     .pickup
-      %h3 今注目のカテゴリー
-      %ul.category-list
-        %li アクセサリー
-        = image_tag "neckless.jpg", size: "130"
-        = image_tag "bankle.jpg", size: "130"
-        = image_tag "pias.jpg", size: "130"
-        %li 子供用・おもちゃ
-        = image_tag "toy1.jpg", size: "130"
-        = image_tag "toy2.jpg", size: "130"
-        = image_tag "toy3.jpg", size: "130"
+      .pickup-area
+        %h3 今注目のカテゴリー
+        %ul.category-list
+          %li アクセサリー
+          = image_tag "neckless.jpg", size: "130"
+          = image_tag "bankle.jpg", size: "130"
+          = image_tag "pias.jpg", size: "130"
+
 %footer
+

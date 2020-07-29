@@ -1,5 +1,5 @@
 header{
-  width: 100vw;
+  width: 100%;
   height: auto;
 
   .header-top{
@@ -51,39 +51,48 @@ header{
 
 .contents{
   width: 100%;
-  height: 900px;
+  height: 600px;
   background-image: url("top-back.png");
   background-size: contain;
 
   .content{
     position: relative;
     width: 1200px;
+
     .introduction{
-      background-color: white;
+      background-image: url(24f34.jpg);
       border-radius: 20px;
-      padding: 30px;
-      height: 700px;
+      height: 350px;
       width: 400px;
       position: absolute;
-      top: 20px;
+      top: 50px;
       left: 30px;
       font-size: 30px;
       font-weight: bold;
       color: #333333;
 
+      h3{
+        position: relative;
+        top: 70px;
+        left: 50px;
+      }
+
       .contents-list{
-        padding: 40px;
-        font-size: 25px;
+        position: relative;
+        top: 90px;
+        left: 80px;
+        font-size: 23px;
         color: #0066FF;
         li{
-          padding: 30px;
+          padding: 10px;
         }
       }
     }
 
     .pickup{
-      background-color: whitesmoke;
-      height: 600px;
+      background-image: url(watermark.jpg);
+      background-size: contain;
+      height: 450px;
       width: 600px;
       border-radius: 20px;
       position: absolute;
@@ -92,19 +101,25 @@ header{
       font-size: 30px;
       font-weight: bold;
       color: #333333;
-      h3{
-        padding: 30px;
-      }
-      .category-list{
-        font-size: 25px;
-        color: green;
-        padding-left: 50px;
-        li{
-          padding: 20px;
+      .pickup-area{
+        position: relative;
+        top: 100px;
+        left: 50px;
+        h3{
+          width: 300px;
+          margin-bottom: 20px;
+          background: linear-gradient(transparent 70%, #00cccc 50%);
         }
-        img{
-          margin-left: 20px;
-          padding-bottom: 30px;
+        .category-list{
+          font-size: 25px;
+          color: green;
+          li{
+            padding-left: 30px;
+            padding-bottom: 20px;
+          }
+          img{
+            margin-left: 30px;
+          }
         }
       }
     }
@@ -112,7 +127,7 @@ header{
 }
 
 footer{
-  width: 100vw;
+  width: 100%;
   height: 100px;
   background-color: black;
 }
