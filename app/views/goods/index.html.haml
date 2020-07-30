@@ -1,36 +1,55 @@
 %header
-  .header-top
+  .header-left
     .top-logo
-      FurimaKK
-    #first-note
-      ＜はじめての方へ＞
-      %ul
-        %li このサイトについて
-        %li 新規会員登録
+      =link_to 'FurimaKK', root_path
 
-  .header-bottom
+  .header-right
     %ul#search-list
-      %li  商品の検索
-      %li  お部屋の検索
-      %li ログイン
+      %li  
+        =link_to '商品の検索', '#'
+      %li  
+        =link_to 'お部屋の検索', '#'
+      %li 
+        =link_to '簡単ログイン', '#'
 
 .contents
   .content
+    .first-note
+      ＜はじめての方へ＞
+      %ul
+        %li 
+          =link_to 'このサイトについて', '#'
+        %li 
+          =link_to '新規会員登録', '#'
     .introduction
       %h3 Contents
       %ul.contents-list
-        %li 自分の部屋へ行く
-        %li 商品を出品する
-        %li 新商品を見る
+        %li 
+          =link_to '自分の部屋へ行く', '#'
+        %li 
+          =link_to '商品を出品する', '#'
+        %li
+          =link_to '新商品を見る', '#'
 
     .pickup
       .pickup-area
         %h3 今注目のカテゴリー
         %ul.category-list
-          %li アクセサリー
-          = image_tag "neckless.jpg", size: "130"
-          = image_tag "bankle.jpg", size: "130"
-          = image_tag "pias.jpg", size: "130"
+          %li 
+            =link_to 'アクセサリー', '#'
+          = link_to image_tag("neckless.jpg", size: "130"), "#"
+          = link_to image_tag("bankle.jpg", size: "130"), "#"
+          = link_to image_tag("pias.jpg", size: "130"), "#"
 
 %footer
-
+  %ul.footer-list
+    %li.site-map
+      =link_to 'このサイトについて', '#', class:'one'
+    %li.terms
+      =link_to '利用規約', '#', class:'one'
+    %li.law
+      =link_to '古物営業法に基づく表記', '#', class:'two'
+    %li.privacy-policy
+      =link_to 'プライバシーポリシー', '#', class:'two'
+    %li.contact
+      =link_to 'お問い合わせ', '#', class:'three'
