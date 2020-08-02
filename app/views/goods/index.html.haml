@@ -4,6 +4,7 @@
       =link_to 'FurimaKK', root_path
 
   .header-right
+    %input.search-box{name:"word", placeholder:"キーワードを入力してください", type:"text", value:""}
     %ul#search-list
       %li  
         =link_to '商品の検索', '#'
@@ -15,7 +16,7 @@
 .contents
   .content
     .first-note
-      ＜はじめての方へ＞
+      %h2 ＜はじめての方へ＞
       %ul
         %li 
           =link_to 'このサイトについて', '#'
