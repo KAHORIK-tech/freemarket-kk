@@ -11,7 +11,10 @@
       %li  
         =link_to 'お部屋の検索', '#'
       %li 
-        =link_to '簡単ログイン', '#'
+        - if user_signed_in?
+          =link_to 'ログアウト', "#"
+        - else
+          =link_to 'ログイン', new_user_session_path
 
 .contents
   .content
@@ -45,12 +48,21 @@
 %footer
   %ul.footer-list
     %li.site-map
-      =link_to 'このサイトについて', '#', class:'one'
+      =link_to 'このサイトについて', '#'
     %li.terms
-      =link_to '利用規約', '#', class:'one'
+      =link_to '利用規約', '#'
     %li.law
-      =link_to '古物営業法に基づく表記', '#', class:'two'
+      =link_to '古物営業法に基づく表記', '#'
     %li.privacy-policy
-      =link_to 'プライバシーポリシー', '#', class:'two'
+      =link_to 'プライバシーポリシー', '#'
     %li.contact
-      =link_to 'お問い合わせ', '#', class:'three'
+      =link_to 'お問い合わせ', '#'
+    %li.api
+      =link_to "#" do
+        =icon('fab', 'facebook-square')
+    %li.api
+      =link_to "#" do
+        =icon('fab', 'twitter')
+    %li.api
+      =link_to "#" do
+        =icon('fab', 'instagram')
