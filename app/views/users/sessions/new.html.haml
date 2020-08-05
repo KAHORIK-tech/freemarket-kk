@@ -5,10 +5,10 @@
 
 = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
   .field
-    .p メールアドレス
+    %p メールアドレス
     = f.email_field :email, autofocus: true, autocomplete: "Email"
   .field
-    .p パスワード
+    %p パスワード
     = f.password_field :password, autocomplete: "current-password"
   - if devise_mapping.rememberable?
     .field
