@@ -1,0 +1,43 @@
+%p
+  %h2 商品の登録
+  .note ※ のついた必須項目を必ず入力・選択して「出品する」を押してください。
+
+  .goods-info
+    = form_for @good do |form|  
+      .name
+        %p 商品の名前
+        .input-area
+          = form.text_field :name
+      
+      .introduction
+        %p 商品の説明
+        .input-area
+          =form.text_area :introduction
+
+      .category
+        %p 商品のカテゴリー
+        .input-area
+          = form.text_field :category_id
+      
+      .prefecture
+        %p 出荷元の都道府県
+        .input-area
+          = form.text_field :prefecture_id
+      
+      .charge
+        %p 運送料の支払い
+        .input-area
+          = form.text_field :charge_id
+      
+      .shipping_method
+        %p 運送条件（運送会社など）
+        .input-area
+          = form.text_field :shipping_method_id
+      
+      .price
+        %p 商品の価格
+        .input-area
+          = form.text_field :price
+      
+      .exhibition
+        = form.submit

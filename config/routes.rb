@@ -5,4 +5,6 @@ Rails.application.routes.draw do
     passwords: 'users/passwords'
   }
   root "goods#index"
+
+  resources :goods, only: [:index, :new, :create]
 end

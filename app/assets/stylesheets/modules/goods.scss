@@ -21,13 +21,26 @@ header{
     .search-box{
       height: 70px;
       width: 400px;
+      background-color: #eeeeee;
+      position: relative;
+      padding-left: 15px;
+      padding-top: 5px;
+      input{
+        height: 30px;
+        width: 300px;
+        background-color: white;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        padding: 5px;
+      }
     }
     #search-list{
       display: flex;
       flex-wrap: nowrap;
       
       li{
-        width: 130px;
+        width: 160px;
         height: 40px;
         text-align: center;
         font-weight: 50ox;
@@ -37,6 +50,7 @@ header{
         border: solid 1px blue;
         border-radius: 10px;
         box-shadow: 1px 2px 3px gray;
+        background-color: #eeffff;
       }
     }
   }
@@ -109,23 +123,24 @@ header{
     }
 
     .pickup{
-      background-image: url(watermark.jpg);
+      background-color: #eeffff;
       background-size: contain;
-      height: 450px;
-      width: 600px;
+      height: 350px;
+      width: 570px;
       border-radius: 20px;
       position: absolute;
-      top: 30px;
-      left: 600px;
+      top: 70px;
+      left: 550px;
+      padding: 30px;
       font-size: 30px;
       font-weight: bold;
       color: #333333;
       box-shadow: 1px 2px 3px gray;
 
       .pickup-area{
-        position: relative;
-        top: 100px;
-        left: 50px;
+        // position: relative;
+        // top: 100px;
+        // left: 50px;
         h3{
           width: 300px;
           margin-bottom: 20px;
